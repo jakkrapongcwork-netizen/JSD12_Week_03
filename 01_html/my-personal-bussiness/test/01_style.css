@@ -1,0 +1,91 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    min-height: 120vh; /* เผื่อพื้นที่ให้เลื่อนหน้าจอได้ */
+}
+
+/* --- รูปภาพด้านข้าง (Fixed Position) --- */
+.hamster-side {
+    position: fixed;
+    top: 0;
+    height: 100vh; /* สูงเต็มหน้าจอพอดี */
+    width: auto;   /* ให้ความกว้างปรับตามสัดส่วนรูป */
+    max-width: 20%; /* จำกัดไม่ให้รูปใหญ่เกินไปจนทับเนื้อหา */
+    object-fit: cover;
+    z-index: -1;   /* อยู่หลังเนื้อหาหลัก */
+}
+
+.left { 
+    left: 0; 
+}
+
+.right { 
+    right: 0; 
+    transform: scaleX(-1); /* กลับด้านแฮมสเตอร์ให้หันหน้าเข้าหาเนื้อหา */
+}
+
+/* --- คอนเทนเนอร์หลักกลางจอ --- */
+.main-container {
+    width: 65%; /* สัดส่วนความกว้างกล่องเนื้อหา */
+    max-width: 1000px;
+    margin: 0 auto; /* จัดกึ่งกลางหน้าจอ */
+    background-color: black;
+    border: 2px solid red;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* ระยะห่างระหว่างแต่ละกล่อง */
+}
+
+/* สไตล์กล่องเส้นขอบแดง */
+.red-box {
+    border: 1px solid red;
+    padding: 15px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.nav-item {
+    width: 50px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.green { background-color: #39FF14; }
+.purple { background-color: #BC13FE; }
+
+/* การจัด Layout ของแถวต่างๆ */
+.header-section {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr; /* กล่องซ้ายเล็ก กล่องขวาใหญ่ */
+    gap: 15px;
+}
+
+.content-section {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    gap: 15px;
+    min-height: 350px;
+}
+
+.large-banner {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}

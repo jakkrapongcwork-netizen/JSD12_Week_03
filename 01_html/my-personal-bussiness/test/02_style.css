@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1a1a1a; /* พื้นหลังเข้ม */
+    color: white;
+    font-family: 'Tahoma', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Sidebar สองข้าง */
+.sidebar-left, .sidebar-right {
+    width: 15%;
+    overflow: hidden;
+}
+
+.sidebar-left img, .sidebar-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+/* เนื้อหาตรงกลาง */
+.main-content {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* กล่องมาตรฐานในหน้าเว็บ */
+.box {
+    border: 1px solid #ff4d4d; /* กรอบสีแดง */
+    padding: 20px;
+    background-color: black;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    height: 40px;
+    border: 1px solid #ff4d4d;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.status-dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 40px;
+    height: 15px;
+    border-radius: 2px;
+}
+
+.green { background-color: #00ff00; }
+.purple { background-color: #bf00ff; }
+
+/* Header Top Section */
+.header-top {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Content Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 15px;
+}
+
+.menu-list, .display-area {
+    height: 300px;
+}
+
+.info-text {
+    min-height: 60px;
+}
+
+.footer {
+    text-align: center;
+}

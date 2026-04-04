@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;         /* ลบขอบขาวเริ่มต้นของ Browser */
+    width: 100%;       /* เต็มความกว้าง */
+    min-height: 100vh; /* สูงอย่างน้อยเท่ากับหน้าจอ (ถ้าเนื้อหาเยอะจะยืดลงไปได้อีก) */
+}
+
+#picture-left {
+    border: 2px solid red;
+    width: 15%;
+    height: 100vh;
+}
+    
+#picture-right {
+    border: 2px solid red;
+    width: 15%;
+    height: 100vh;
+}
+
+.music-hamster-1 {
+    width: 100%;    /* ให้ความกว้างขยายเต็ม 100% ของกล่องแดง */
+    height: 100%;   /* ให้ความสูงขยายเต็ม 100% ของกล่องแดง */
+    object-fit: cover; /* สำคัญ! ป้องกันไม่ให้รูปเบี้ยวหรือเสียสัดส่วน */
+}
+
+.music-hamster-2 {
+    width: 100%;    /* ให้ความกว้างขยายเต็ม 100% ของกล่องแดง */
+    height: 100%;   /* ให้ความสูงขยายเต็ม 100% ของกล่องแดง */
+    object-fit: cover; /* สำคัญ! ป้องกันไม่ให้รูปเบี้ยวหรือเสียสัดส่วน */
+}
+
+main {
+    border: 2px solid red;
+    width: 65%;
+    height: 100vh;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.nav {
+    border: 2px solid red;
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+}
+
+.section-1 {
+    border: 2px solid red;
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+}
+
+.section-2 {
+    border: 2px solid red;
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+}
+
+.section-3 {
+    border: 2px solid red;
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+}
+
+.footer {
+    border: 2px solid red;
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+}

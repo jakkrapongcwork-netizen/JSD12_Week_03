@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    
+    <title>Hamster Shop</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="05_style.css">
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+</style>
+
+</head>
+<body font-family: Iceland, sans-serif; class="bg-[#e2e2e2] right-bottom flex flex-row justify-between">
+
+    <aside class="w-1/7 h-screen m-5">
+        <img src="/01_html/my-personal-bussiness/picture/gray music hamster.png" class="w-full h-full object-cover object-[30%_0%] rounded-xl">
+    </aside>
+
+    <main class="w-265 h-screen">
+        <nav class="flex flex-row justify-between">
+            <div>
+                <img src="/01_html/my-personal-bussiness/picture/logo.png" class="w-50 h-fit">
+            </div>
+            
+            <div class="w-150 flex justify-end items-center gap-3">
+                <button type="button" class="text-black font-bold border-2 w-20 h-8 rounded-md hover:bg-sky-50 text-xs">
+                    HOME
+                </button>
+                <button type="button" class="text-black font-bold border-2 w-20 h-8 rounded-md hover:bg-sky-50 text-xs">
+                    SHOP
+                </button>
+                <button type="button" class="text-black font-bold border-2 w-20 h-8 rounded-md hover:bg-sky-50 text-xs">
+                    ABOUT US
+                </button>
+                <button type="button" class="text-black font-bold border-2 w-20 h-8 rounded-md hover:bg-sky-50 text-xs">
+                    LOGIN
+                </button>
+            </div>
+        </nav>
+        
+        <section class="h-80 flex flex-row items-center justify-center gap-20">
+            <div class="flex flex-col gap-10">
+                <div class="flex justify-center text-5xl">
+                    <h1 class="text-black font-bold">WELCOME TO MY SHOP</h1>
+                </div>
+                <div class="flex justify-center text-xl">
+                    <h2>อาหารดี หนูแฮมสเตอร์มีแรงปั่น เจ้าของมีแรงเปย์</h2>
+                </div>
+            </div>
+            <div>
+                <div class="relative w-60 max-w-lg mx-auto overflow-hidden">
+                    <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+                        <img src="/01_html/my-personal-bussiness/hamster_picure/5. อาหารแฮมสเตอร์ผลไม้.png" class="w-full flex-shrink-0">
+                        <img src="/01_html/my-personal-bussiness/hamster_picure/8. ลู่วิ่งน้ำแฮมสเตอร์.jpg" class="w-full flex-shrink-0">
+                        <img src="/01_html/my-personal-bussiness/hamster_picure/gif.gif" class="w-full flex-shrink-0">
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                const slider = document.getElementById('slider');
+                let index = 0;
+
+                setInterval(() => {
+                    index = (index + 1) % 3; // 3 คือจำนวนภาพ
+                    slider.style.transform = `translateX(-${index * 100}%)`;
+                }, 3000); // เปลี่ยนภาพทุก 3 วินาที
+            </script>
+
+        </section>
+        <section class="h-50 flex justify-center items-center gap-20">
+            <button class="font-bold border-2 w-60 h-10 rounded-md hover:bg-sky-50">
+                PROMOTION
+            </button>
+            <button class="font-bold border-2 w-60 h-10 rounded-md hover:bg-sky-50">
+                ENTER TO WEBSITE
+            </button>
+        </section>
+        
+        <footer class="flex justify-between">
+            <div class="">
+                <h2>Contact</h2>
+                <h2>Mail: jakkrapongc.work@mail.com</h2>
+                <h2>Phone: 094-316-7993</h2>
+            </div>
+            <div class="flex justify-end">
+                <img src="/01_html/my-personal-bussiness/picture/footer-Photoroom.png" class="w-60 h-auto">
+            </div>
+
+        </footer>
+    </main>
+    
+
+    
+    <aside class="w-1/7 h-screen m-5">
+        <img src="/01_html/my-personal-bussiness/picture/gray music hamster.png" class="w-full h-full object-cover transform -scale-x-100 object-[30%_0%] rounded-xl">
+    </aside>
+
+</body>
+</html>
